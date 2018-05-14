@@ -1,12 +1,12 @@
 //Biograpy object
 var bio = {
     "name": "Kensuke Shibata",
-    "role": "SYSTEMS ADMINISTRATOR",
+    "role": "Monitoring & Response Engineer - Unix",
     "contacts": {
-        "mobile": "021-041-8158",
+        "mobile": "0452-367-803",
         "email": "kensukeshibata@gmail.com",
         "github": "keshibat",
-        "location": "New Zealand",
+        "location": "Sydney",
     },
     "welcomeMessage": "",
     "skills": [
@@ -22,7 +22,7 @@ var bio = {
 bio.display = function() {
     //adding name, role
     var formattedName = HTMLheaderName.replace("%data%", "Kensuke Shibata");
-    var formattedRole = HTMLheaderRole.replace("%data%", "SYSTEMS ADMINISTRATOR");
+    var formattedRole = HTMLheaderRole.replace("%data%", "Monitoring & Response Engineer - Unix");
     $("#topContacts, #footerContacts").before(formattedRole, formattedName);
 
     //adding contact info
@@ -62,7 +62,7 @@ bio.display = function() {
 var work = {
     "jobs": [{
         "employer": "NOKIA",
-        "title": "Systems Administrator",
+        "title": "Customer Support Engineer",
         "location": "Tokyo, Japan",
         "dates": "August 2014 – May 2016",
         "description": "Operation and maintenance Online Charging System (Unix based) which consists of massive traffics and millions of live subscribers. \n Reproduce identified problems in the Lab and provide information for debugging software if necessary. \n Document root cause and fix procedure for the external customer. \n Test fix approach at the lab then implement and deploy fixes on the commercial site. \n The team works shift 24/7"
@@ -104,15 +104,15 @@ work.display = function() {
 
 var projects = {
     "projects": [{
-        "title": "Fill-in-the-Blanks Quiz",
-        "dates": "June 2016 - November 2016",
-        "description": "One of the Intro to Programming Nanodegree projects which creates fill-in-the-blanks quiz in python. \n Quiz will prompt a user with a sentence containing several blanks. \n The user should then be asked to fill in each blank appropriately to complete the sentence.",
-        "images": ["images/madlib_quiz.png"]
+        "title": "Linux Server Configuration",
+        "dates": "May 2018 - May 2018",
+        "description": "Baseline installation and configuration of a Linux distribution and prepare it to host your web applications \n that contains the code and config for this Clothing Catalog App, built using Python Flask, \n to run on a Linux Ubuntu server with Apache2, hosted on a Virtual Private Server with Amazon LightSail.",
+        "images": ["images/linux.png"]
     }, {
-        "title": "Movie Website",
-        "dates": "June 2016 - November 2016",
-        "description": "One of the Intro to Programming Nanodegree projects which creates Movie Website in python. \n Store a list of your favorite movies, including box art imagery and a movie trailer URL. \n Generate a static web page allowing visitors to browse their movies and watch the trailer.",
-        "images": ["images/favorite_movie.png"]
+        "title": "Log Analysis",
+        "dates": "January 2018 - March 2018",
+        "description": "Build an internal reporting tool that will use information from the database to discover what kind of articles the site's \n readers like. My code create a reporting tool that prints out reports (in plain text) based on the data in the database. \n This reporting tool is a Python program using the psycopg2 module to connect to the database.",
+        "images": ["images/log_analysis.png"]
     }, ]
 };
 
@@ -154,10 +154,10 @@ var education = {
         "url": "https://www.deanza.edu/",
     }],
     "onlineCourses": [{
-        "title": "Intro to Programming Nanodegree",
+        "title": "Full Stack Web Developer Nanodegree",
         "school": "Udacity",
-        "dates": "2016",
-        "url": "https://www.udacity.com/course/intro-to-programming-nanodegree--nd000"
+        "dates": "2017",
+        "url": "https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004"
     }]
 };
 
